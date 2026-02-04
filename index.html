@@ -2,142 +2,138 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>GROUP STREAMING VIDEO & CHATING | Private Community</title>
-  <!-- Meta Tag Open Graph -->
-  <meta property="og:title" content="GROUP STREAMING VIDEO | Private Community" />
-  <meta property="og:description" content="LIVE VCS ,𝖩𝗈𝗂𝗇 𝖫𝗂𝗏𝖾 𝖢𝗁𝖺𝗍 𝖵𝗂𝖽𝖾𝗈 𝖭𝗈𝗐! " />
-  <meta property="og:url" content="GROUP STREAMING live vcs" />
-  <meta property="og:image" content="live.jpeg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-  <meta property="og:type" content="website" />
-  <title>SREAMING VIP</title>
-    <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masa Aktif Habis</title>
+
+  <style>
     body {
-      position: relative;
-      overflow: hidden;
-    }
-    /* Background image dengan animasi dan overlay putih */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('bg22.jpeg') no-repeat center;
-      background-size: cover;
-      transform: scale(1.2);
-      animation: floatBackground 3s infinite ease-in-out;
-      z-index: -2;
-    }
-    body::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.2);
-      z-index: -1;
-    }
-    @keyframes floatBackground {
-      0% {
-        transform: scale(1.2) translateY(0);
-      }
-      50% {
-        transform: scale(1.2) translateY(-20px);
-      }
-      100% {
-        transform: scale(1.2) translateY(0);
-      }
-    }
-    /* Header bar hitam */
-    header {
-      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #ff616f, #ff9966, #ff4d4f);
+      background-size: 600% 600%;
+      animation: bgMove 8s ease infinite;
+
+      color: #fff;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-    }
-    .header-left {
-      font-size: 18px;
-      color: #e74c3c;
-      font-weight: bold;
-    }
-    .header-right {
-      font-size: 18px;
-      color: #e74c3c;
-      cursor: pointer;
-    }
-    /* Konten utama */
-    .container {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
+      height: 100vh;
+      margin: 0;
       text-align: center;
-      min-height: calc(100vh - 60px);
-      position: relative;
-      z-index: 1;
     }
-    .avatar img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #e74c3c;
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    .title {
-      font-size: 32px;
-      color: #e74c3c;
-      margin-top: 20px;
-      font-weight: bold;
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 22px;
+      padding: 40px 30px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+      max-width: 400px;
+
+      animation: cardIn 1s ease forwards, float 3s ease-in-out infinite;
+      opacity: 0;
+      transform: translateY(30px);
     }
-    .subtitle {
-      font-size: 18px;
-      color: #e74c3c;
-      margin-top: 10px;
+
+    @keyframes cardIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .icon {
+      font-size: 4.5em;
+      margin-bottom: 15px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 25px;
+      opacity: 0.9;
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .btn {
-      margin-top: 20px;
-      background-color: #e74c3c;
-      color: #fff;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 15px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      background: #fff;
+      color: #ff4d4f;
+      padding: 13px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
     }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: rgba(255, 77, 79, 0.2);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.4s ease;
+    }
+
+    .btn:hover::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
     .btn:hover {
-      background-color: #c0392b;
+      background: #ff4d4f;
+      color: #fff;
+      transform: scale(1.08);
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="header-left">Live VCS</div>
-    <div class="header-right">GROUP STREAMING VIDEO & CHATING</div>
-  </header>
-  <div class="container">
-    <div class="avatar">
-      <img src="avatar22.jpeg" alt="Avatar">
-    </div>
-    <div class="title"> <h2>GROUP STREAMING VIDEO & CHATING 2025 </h2> </div>
-    <div class="subtitle"> <h3>Join Live Chat Video Now!! </h3> </div>
-    <button class="btn" onclick="window.location.href='form/nomorhp.html'">Join Now</button>
+  <div class="card">
+    <div class="icon">⚠️</div>
+    <h1>Masa Aktif Habis</h1>
+    <p>
+      Maaf, masa aktif akun kamu sudah habis.<br>
+      Silakan perpanjang langganan untuk melanjutkan layanan.
+    </p>
   </div>
 </body>
 </html>
